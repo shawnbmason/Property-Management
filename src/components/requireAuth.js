@@ -16,7 +16,7 @@ export default function(ComposedComponent) {
       }
     }
     render() {
-      return <ComponentComponent/>
+      return <ComposedComponent/>
     }
   }
 
