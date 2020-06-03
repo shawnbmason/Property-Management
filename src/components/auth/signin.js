@@ -20,7 +20,7 @@ class Signin extends Component {
   render() {
     return (
       <div className='sign-in'>
-        <SigninForm onSubmit={() => this.onSubmit(event)}/>
+        <SigninForm onSubmit={(event) => this.onSubmit(event)}/>
       </div>
     )
   }
