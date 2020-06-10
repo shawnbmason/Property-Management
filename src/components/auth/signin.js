@@ -12,10 +12,6 @@ class Signin extends Component {
       this.props.history.push('/dashboard');
     })
   }
-  onSubmit = (fields) => {
-    console.log('trying to handle submit');
-  }
-
 
   render() {
     return (
