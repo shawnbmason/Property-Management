@@ -5,7 +5,7 @@ import { FormTitle } from '../formTitle';
 import { FormInput, FormButton } from '../formFields';
 import TextLink from "../textLink";
 
-class SigninForm extends Component {
+class NewNewsletterForm extends Component {
   render() {
 
     const  { handleSubmit } = this.props;
@@ -46,8 +46,8 @@ class SigninForm extends Component {
   }
 }
 
-SigninForm = reduxForm({
-  form: 'signin'
-})(SigninForm);
+NewNewsletterForm = reduxForm({
+  form: "newnewsletter"
+})(NewNewsletterForm);
 
-export default SigninForm;
+export default NewNewsletterForm;
