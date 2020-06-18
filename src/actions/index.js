@@ -4,11 +4,11 @@ import {
 } from './auth';
 
 import {
-  fetchNewsletter
+  fetchNewsletters
 } from './newsletter';
 
 export {
   signUp,
   signIn,
-  fetchNewsletter
+  fetchNewsletters
 };
