@@ -2,7 +2,7 @@ import {
     SET_NEWSLETTERS
 } from './types';
 
-export function fetchNewsletter() {
+export function fetchNewsletters() {
   const response = {
     data: [
       {
