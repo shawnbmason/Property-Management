@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import NewNewsletterForm from './newsletterNewForm';
 
 class EditNewsletter extends Component {
-
   onSubmit = (fields) => {
       // if(button == 'submit') {
         // save new newsletter on the backend. perform a post request here.
@@ -14,6 +13,11 @@ class EditNewsletter extends Component {
 
   onCancel = () => {
       this.props.history.push('/dashboard');
+  };
+
+  componentDidMount() {
+    //this.props.fetchNewslettersWithId()
+    console.log(this.props.match.params.id);
   }
 
   render() {
@@ -25,7 +29,7 @@ class EditNewsletter extends Component {
           title='Edit Newsletter'
           />
       </div>
-    )
+    );
   }
 }
 
