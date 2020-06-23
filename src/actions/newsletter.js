@@ -31,7 +31,7 @@ export function fetchNewsletters() {
 
 export function fetchNewslettersWithId(id) {
   return {
-    type:FETCH_NEWSLETTER_ID,
+    type: FETCH_NEWSLETTER_ID,
     payload: id
   }
 }

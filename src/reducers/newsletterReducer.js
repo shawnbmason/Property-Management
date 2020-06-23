@@ -1,5 +1,6 @@
 import {
-    SET_NEWSLETTERS
+    SET_NEWSLETTERS,
+    FETCH_NEWSLETTER_ID
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -18,7 +19,7 @@ export default function(state = INITIAL_STATE, action) {
         case FETCH_NEWSLETTER_ID:
           const newsletterID = action.payload;
           var newsletterToEdit = {};
-          state.newsletter.map(newsletter => {
+          state.newsletters.map(newsletter => {
             if(newsletter._id == newsletterID) {
               newsletterToEdit = newsletter;
             }
