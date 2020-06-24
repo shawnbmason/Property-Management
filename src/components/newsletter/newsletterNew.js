@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 import NewNewsletterForm from './newsletterNewForm';
 
 class NewNewsletter extends Component {
-
   onSubmit = (fields) => {
-
       // if(button == 'submit') {
         // save new newsletter on the backend. perform a post request here.
         // console.log('trying to submit to backend');
