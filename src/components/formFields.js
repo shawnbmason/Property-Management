@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
   export class FormInput extends Component {
     render() {
-      const { className, title, input, type, placeholder } = this.props;
+      const { className, title, input, type, placeholder, editValue } = this.props;
       return (
         <div className={`${className} form-input`}>
           <label className='form-input__title'>{title}</label>
@@ -11,6 +11,7 @@ import React, { Component } from 'react';
             type={type}
             {...input}
             placeholder={placeholder}
+            value={editValue ? editValue : input.value}
           />
         </div>
       )
@@ -19,7 +20,7 @@ import React, { Component } from 'react';
 
   export class FormTextArea extends Component {
     render() {
-      const { className, title, input, type, placeholder } = this.props;
+      const { className, title, input, type, placeholder, editValue } = this.props;
       return (
         <div className={`${className} form-textarea`}>
           <label className='form-textarea__title'>{title}</label>
@@ -28,6 +29,7 @@ import React, { Component } from 'react';
             type={type}
             {...input}
             placeholder={placeholder}
+            value={editValue ? editValue : ''}
           >
 
           </textarea>
@@ -64,8 +66,9 @@ import React, { Component } from 'react';
         var image = document.getElementById('newsletter-new-image');
         image.src = URL.createObjectURL(event.target.files[0]);
       }
+
       render() {
-        const { className, title, input, type, imageUrl } = this.props;
+        const { className, title, input, imageUrl } = this.props;
         return (
           <div className={`${className} form-image`}>
             <label className='form-image__title'>{title}</label>
