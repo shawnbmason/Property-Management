@@ -18,7 +18,7 @@ class NewsletterDetail extends Component {
     console.log(this.props.newsletterToEdit);
     return (
       <div className='newsletter-detail'>
-          <FormTitle className='newletter-detail__title' text='Newletter Archive'/>
+          <FormTitle className='newletter-detail__title' text='Newletter Archive'/>A
           <NewsletterBox date={this.props.newsletterToEdit.date}/>
           <NewsletterLatest {...this.props.newsletterToEdit}/>
           <FormButton
