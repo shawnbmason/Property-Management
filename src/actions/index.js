@@ -8,9 +8,14 @@ import {
   fetchNewslettersWithId
 } from './newsletter';
 
+import {
+  changeSelectedRequestType
+} from './requests';
+
 export {
   signUp,
   signIn,
   fetchNewsletters,
-  fetchNewslettersWithId
+  fetchNewslettersWithId,
+  changeSelectedRequestType
 };
