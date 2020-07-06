@@ -19,9 +19,25 @@ class RequstsItem extends Component {
                 <div className='requests-item__date'>
                     09/12/93
                 </div>
-
                 <Button className='requests-item__move' icon='fas fa-wrench' callback={() => console.log('tryna move request item')}/>
 
+                <div className='requests-item__description'>
+                  <img
+                    className='request-item__description-img'
+                    src='http://via.placeholder.com/160x94'
+                  />
+                  <p className='requests-item__description-text'>
+                  An ab quid senserit, iis e fore nisi multos, id sunt fugiat a appellat sed se
+                  nulla exquisitaque. Sed aute dolore esse aliquip ne duis incurreret admodum se
+                  magna excepteur o despicationes ita iis est concursionibus. Hic cupidatat
+                  despicationes, commodo o aute cernantur ad sed offendit quo deserunt id nisi ea
+                  cernantur. Nostrud iis cillum te a elit o summis ne nam ubi minim laboris sed ea
+                  quae quae velit singulis.Qui quorum consequat. Est o ipsum duis nulla non
+                  arbitror tamen multos occaecat veniam si sed nisi deserunt, dolore et si cillum
+                  senserit. Pariatur ea legam ne ita ea enim officia si dolore e cupidatat, irure
+                  cupidatat quamquam.
+                  </p>
+                </div>
               </div>
         )
     }
