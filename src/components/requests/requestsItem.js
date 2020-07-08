@@ -44,12 +44,12 @@ class RequstsItem extends Component {
                     duration={300}
                     height={this.state.height}
                   >
-                    <div className='requests-item__description'>
+                    <div className='item-description'>
                       <img
-                        className='request-item__description-img'
+                        className='item-description__img'
                         src='http://via.placeholder.com/160x94'
                       />
-                      <p className='requests-item__description-text'>
+                      <p className='item-description__text'>
                       An ab quid senserit, iis e fore nisi multos, id sunt fugiat a appellat sed se
                       nulla exquisitaque. Sed aute dolore esse aliquip ne duis incurreret admodum se
                       magna excepteur o despicationes ita iis est concursionibus. Hic cupidatat
