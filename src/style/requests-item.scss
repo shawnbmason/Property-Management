@@ -2,8 +2,6 @@
   grid-template-rows: [s title-s] 34px [title-e tenant-s] 34px [tenant-e e];
 }
 
-
-
 .requests-item {
   display: grid;
   grid-template-rows: [s title-s] 34px [title-e tenant-s] 10px [tenant-e e];
@@ -42,11 +40,13 @@
   &__move {
     grid-column: date-s/date-e;
     grid-row: s/e;
-    display: none;
+    justify-self: right;
   }
+
   &__description {
     grid-column: s/e;
   }
+
   .item-description {
     display: grid;
     grid-column-gap: 4rem;
@@ -54,13 +54,13 @@
   }
 }
 
+.bg-F8 {
+  background-color: $color-gray-F8;
+}
 
 .requests-item {
   padding: 6px 0px;
-
-  &:hover {
-    background-color: $color-gray-F8;
-  }
+  transition: all .3s ease;
 
   &__icon {
     font-size: 2.7rem;
@@ -90,11 +90,15 @@
   }
 
   &__date {
+    transition: all .3s ease;
     font-size: 1.4rem;
     line-height: 1.7rem;
   }
 
   &__move {
+    transition: all .3s ease;
+    transform: translateX(100px);
+    opacity: 0;
   }
 
   .item-description {
@@ -108,6 +112,18 @@
     &__text {
       font-size: 1.4rem;
       line-height: 1.7rem;
+    }
+  }
+
+  &:hover {
+    background-color: $color-gray-F8;
+
+    .requests-item__move {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .requests-item__date {
+      transform:  translate(-100px);
     }
   }
 }
