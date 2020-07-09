@@ -7,7 +7,10 @@ import { FormInput, FormButton, FormTextArea, FormImage } from '../formFields';
 class NewNewsletterForm extends Component {
   render() {
 
-    const  { handleSubmit, formTitle, newsletterToEdit } = this.props;
+    const { handleSubmit, formTitle, newsletterToEdit } = this.props;
+    const { fieldOnePlaceHolder, fieldOneTitle,
+            fieldTwoPlacHolder, fieldTwoTitle
+    } = this.props;
 
     var title = null;
     var body = null;
@@ -24,19 +27,19 @@ class NewNewsletterForm extends Component {
         <FormTitle className='new-newsletter-form__title' text={formTitle}/>
         <Field
           className='new-newsletter-form__newsletter-title'
-          placeholder='Service Request Title Here'
+          placeholder={fieldOnePlaceHolder}
           name='title'
           type='text'
-          title='Newsletter Title'
+          title={fieldOneTitle}
           component={FormInput}
           editValue={title ? title : null}
         />
         <Field
           className='new-newsletter-form__body'
-          placeholder='Service Request Description (Here)'
+          placeholder={fieldTwoPlacHolder}
           name='body'
           type='text'
-          title='Body'
+          title={fieldTwoTitle}
           component={FormTextArea}
           editValue={body ? body : null}
         />
