@@ -11,7 +11,7 @@ class NewRequest extends Component {
         // save new newsletter on the backend. perform a post request here.
         // console.log('trying to submit to backend');
       // }
-      this.props.createNewRequest(this.props.id, {}, () => {
+      this.props.createNewRequest(this.props.id, fields, () => {
           this.props.history.push('/dashboard');
       })
 

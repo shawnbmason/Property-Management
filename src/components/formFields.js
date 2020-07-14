@@ -29,10 +29,9 @@ import React, { Component } from 'react';
             type={type}
             {...input}
             placeholder={placeholder}
-            value={editValue ? editValue : ''}
-          >
+            value={editValue ? editValue : input.value}
+          />
 
-          </textarea>
         </div>
       )
     }
