@@ -15,7 +15,7 @@ class RequestsGrid extends Component {
     }
 
     componentDidMount() {
-      this.props.fetchRequests()
+        this.props.fetchRequests()
     }
 
     render() {
@@ -29,6 +29,6 @@ class RequestsGrid extends Component {
     }
 }
 
-RequestsGrid = connect(null, actions)(RequestsGrid);
+RequestsGrid = connect(null, actions)(RequestsGrid)
 
 export default RequestsGrid;
